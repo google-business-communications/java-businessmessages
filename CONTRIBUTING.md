@@ -37,29 +37,3 @@ accept your pull requests.
 1.  Title your pull request following [Conventional Commits](https://www.conventionalcommits.org/) styling.
 1.  Submit a pull request.
 
-## Running the tests
-
-1.  [Prepare your environment for Node.js setup][setup].
-
-1.  Install dependencies:
-
-        npm install
-
-1.  Run the tests:
-
-        # Run unit tests.
-        npm test
-
-        # Run sample integration tests.
-        gcloud auth application-default login
-        npm run samples-test
-
-        # Run all system tests.
-        gcloud auth application-default login
-        npm run system-test
-
-1.  Lint (and maybe fix) any changes:
-
-        npm run fix
-
-[setup]: https://cloud.google.com/nodejs/docs/setup
