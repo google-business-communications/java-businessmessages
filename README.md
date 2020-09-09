@@ -8,17 +8,32 @@ For additional help developing Business Messages applications, in Java and other
 [Business Messages quickstart](https://developers.google.com/business-communications/business-messages/guides/quickstarts/echo-agent)
 guide.
 
+## Setup Instructions
+The Actions on Google Java/Kotlin library is hosted on Maven central.
+To use the library in your project, add the following to the dependencies section of your
+project’s build.gradle.
 
-## Versioning
+```
+repositories {
+   mavenCentral()
+}
 
-This library follows [Semantic Versioning](http://semver.org/).
+dependencies {
+   compile group: 'com.google.apis', name: 'google-api-services-businessmessages', version: '1.25.0'
+}
+```
 
 
-This library is considered to be **General Availability (GA)**. This means it
-is stable; the code surface will not change in backwards-incompatible ways
-unless absolutely necessary (e.g. because of critical security issues) or with
-an extensive deprecation period. Issues and requests against **GA** libraries
-are addressed with the highest priority.
+If using maven, add the following to your pom.xml file.
+
+```xml
+<dependency>
+	<groupId>com.google.apis</groupId>
+	<artifactId>google-api-services-businessmessages</artifactId>
+	<version>1.25.0</version>
+</dependency>
+```
+
 
 ## Contributing
 
