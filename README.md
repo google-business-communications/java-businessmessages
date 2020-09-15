@@ -9,7 +9,7 @@ For additional help developing Business Messages applications, in Java and other
 guide.
 
 ## Setup Instructions
-The Actions on Google Java/Kotlin library is hosted on Maven central.
+The Business Messages library is hosted on Maven central.
 To use the library in your project, add the following to the dependencies section of your
 project’s build.gradle.
 
