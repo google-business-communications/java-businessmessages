@@ -19,7 +19,7 @@
 package com.google.api.services.businessmessages.v1.model;
 
 /**
- * Opens the user's default dialer app with the specified phone number filled in.
+ * Request to authenticate a conversation.
  *
  * <p> This is the Java data model class that specifies how to parse/serialize into the JSON that is
  * transmitted over HTTP when working with the Business Messages API. For a detailed explanation
@@ -30,43 +30,40 @@ package com.google.api.services.businessmessages.v1.model;
  * @author Google, Inc.
  */
 @SuppressWarnings("javadoc")
-public final class BusinessMessagesDialAction extends com.google.api.client.json.GenericJson {
+public final class BusinessMessagesAuthenticationRequest extends com.google.api.client.json.GenericJson {
 
   /**
-   * Required. The specified phone number, in [RFC 3966](https://tools.ietf.org/html/rfc3966)
-   * format. For example, "+1-201-555-0123".
+   * Details for authentication via OAuth.
    * The value may be {@code null}.
    */
   @com.google.api.client.util.Key
-  private java.lang.String phoneNumber;
+  private BusinessMessagesAuthenticationRequestOauth oauth;
 
   /**
-   * Required. The specified phone number, in [RFC 3966](https://tools.ietf.org/html/rfc3966)
-   * format. For example, "+1-201-555-0123".
+   * Details for authentication via OAuth.
    * @return value or {@code null} for none
    */
-  public java.lang.String getPhoneNumber() {
-    return phoneNumber;
+  public BusinessMessagesAuthenticationRequestOauth getOauth() {
+    return oauth;
   }
 
   /**
-   * Required. The specified phone number, in [RFC 3966](https://tools.ietf.org/html/rfc3966)
-   * format. For example, "+1-201-555-0123".
-   * @param phoneNumber phoneNumber or {@code null} for none
+   * Details for authentication via OAuth.
+   * @param oauth oauth or {@code null} for none
    */
-  public BusinessMessagesDialAction setPhoneNumber(java.lang.String phoneNumber) {
-    this.phoneNumber = phoneNumber;
+  public BusinessMessagesAuthenticationRequest setOauth(BusinessMessagesAuthenticationRequestOauth oauth) {
+    this.oauth = oauth;
     return this;
   }
 
   @Override
-  public BusinessMessagesDialAction set(String fieldName, Object value) {
-    return (BusinessMessagesDialAction) super.set(fieldName, value);
+  public BusinessMessagesAuthenticationRequest set(String fieldName, Object value) {
+    return (BusinessMessagesAuthenticationRequest) super.set(fieldName, value);
   }
 
   @Override
-  public BusinessMessagesDialAction clone() {
-    return (BusinessMessagesDialAction) super.clone();
+  public BusinessMessagesAuthenticationRequest clone() {
+    return (BusinessMessagesAuthenticationRequest) super.clone();
   }
 
 }
