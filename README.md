@@ -98,8 +98,16 @@ public static void main(String args[]) {
       = builder.build().conversations().messages()
         .create("conversations/" + conversationId, message);
 
+    // Setup retries with exponential backoff
+    HttpRequest httpRequest =
+        ((AbstractGoogleClientRequest) messageRequest).buildHttpRequest();
+
+    httpRequest.setUnsuccessfulResponseHandler(new
+        HttpBackOffUnsuccessfulResponseHandler(
+        new ExponentialBackOff()));
+
     // Execute request
-    messageRequest.execute();
+    httpRequest.execute();
   } catch (Exception e) {
     e.printStackTrace();
   }
@@ -125,8 +133,16 @@ Businessmessages.Conversations.Messages.Create messageRequest
   = builder.build().conversations().messages()
     .create("conversations/" + conversationId, message);
 
+// Setup retries with exponential backoff
+HttpRequest httpRequest =
+    ((AbstractGoogleClientRequest) messageRequest).buildHttpRequest();
+
+httpRequest.setUnsuccessfulResponseHandler(new
+    HttpBackOffUnsuccessfulResponseHandler(
+    new ExponentialBackOff()));
+
 // Execute request
-messageRequest.execute();
+httpRequest.execute();
 ```
 
 ### Sending a text message with suggested replies and actions
@@ -161,8 +177,16 @@ Businessmessages.Conversations.Messages.Create messageRequest
   = builder.build().conversations().messages()
     .create("conversations/" + conversationId, message);
 
+// Setup retries with exponential backoff
+HttpRequest httpRequest =
+    ((AbstractGoogleClientRequest) messageRequest).buildHttpRequest();
+
+httpRequest.setUnsuccessfulResponseHandler(new
+    HttpBackOffUnsuccessfulResponseHandler(
+    new ExponentialBackOff()));
+
 // Execute request
-messageRequest.execute();
+httpRequest.execute();
 ```
 
 ### Sending a rich card
@@ -200,8 +224,16 @@ Businessmessages.Conversations.Messages.Create messageRequest
   = builder.build().conversations().messages()
     .create("conversations/" + conversationId, message);
 
+// Setup retries with exponential backoff
+HttpRequest httpRequest =
+    ((AbstractGoogleClientRequest) messageRequest).buildHttpRequest();
+
+httpRequest.setUnsuccessfulResponseHandler(new
+    HttpBackOffUnsuccessfulResponseHandler(
+    new ExponentialBackOff()));
+
 // Execute request
-messageRequest.execute();
+httpRequest.execute();
 ```
 
 ### Sending a carousel
@@ -250,8 +282,16 @@ Businessmessages.Conversations.Messages.Create messageRequest
   = builder.build().conversations().messages()
     .create("conversations/" + conversationId, message);
 
+// Setup retries with exponential backoff
+HttpRequest httpRequest =
+    ((AbstractGoogleClientRequest) messageRequest).buildHttpRequest();
+
+httpRequest.setUnsuccessfulResponseHandler(new
+    HttpBackOffUnsuccessfulResponseHandler(
+    new ExponentialBackOff()));
+
 // Execute request
-messageRequest.execute();
+httpRequest.execute();
 ```
 
 ## Samples
