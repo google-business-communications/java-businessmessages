@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-   compile group: 'com.google.apis', name: 'google-api-services-businessmessages', version: '1.25.3'
+   compile group: 'com.google.apis', name: 'google-api-services-businessmessages', version: '1.25.4'
 }
 ```
 
@@ -40,7 +40,7 @@ If using maven, add the following to your pom.xml file.
 <dependency>
   <groupId>com.google.apis</groupId>
   <artifactId>google-api-services-businessmessages</artifactId>
-  <version>1.25.3</version>
+  <version>1.25.4</version>
 </dependency>
 ```
 
