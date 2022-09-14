@@ -294,7 +294,7 @@ httpRequest.setUnsuccessfulResponseHandler(new
 httpRequest.execute();
 ```
 
-## Samples
+## Code Samples
 
 See the code examples to see example usage for most API features. The samples' `README.md` has instructions for running the samples.
 
@@ -302,6 +302,26 @@ See the code examples to see example usage for most API features. The samples' `
 | --------------------------- | --------------------------------- |
 | Echo Bot | [source code](https://github.com/google-business-communications/bm-java-echo-bot) |
 | Kitchen Sink | [source code](https://github.com/google-business-communications/bm-java-kitchen-sink) |
+
+## Snippets
+
+Code snippets are in the [`snippets/`](https://github.com/google-business-communications/java-businessmessages/tree/master/snippets)
+
+| Snippet                      | Source Code                       | Try it |
+| --------------------------- | --------------------------------- | ------ |
+| ReadReceipt | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/ReadReceiptSnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/ReadReceiptSnippet.java) |
+| SendAuthenticationRequestSuggestion | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendAuthenticationRequestSuggestionSnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendAuthenticationRequestSuggestionSnippet.java) |
+| SendDialAction | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendDialActionSnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendDialActionSnippet.java) |
+| SendImageMessage | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendImageMessageSnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendImageMessageSnippet.java) |
+| SendLiveAgentRequestSuggestion | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendLiveAgentRequestSuggestionSnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendLiveAgentRequestSuggestionSnippet.java) |
+| SendRichCardCarouselMessage | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendRichCardCarouselMessage.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendRichCardCarouselMessage.java) |
+| SendRichCardMessage | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendRichCardMessageSnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendRichCardMessageSnippet.java) |
+| SendRichTextMessageSnippet | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendRichTextMessageSnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendRichTextMessageSnippet.java) |
+| SendSuggestedAction| [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendSuggestedActionSnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendSuggestedActionSnippet.java) |
+| SendSuggestedReply | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendSuggestedReplySnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendSuggestedReplySnippet.java) |
+| SendSurvey | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendSurveySnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendSurveySnippet.java) |
+| SendTextMessage | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/SendTextMessageSnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/SendTextMessageSnippet.java) |
+| TestFallbackTest | [source code](https://github.com/google-business-communications/java-businessmessages/blob/master/snippets/com/google/apis/TestFallbackTestSnippet.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/google-business-communications/java-businessmessages/&page=editor&open_in_editor=snippets/com/google/apis/TestFallbackTestSnippet.java) |
 
 ## Contributing
 
@@ -312,3 +332,5 @@ Contributions welcome! See the [Contributing Guide](https://github.com/google-bu
 Apache Version 2.0
 
 See [LICENSE](https://github.com/google-business-communications/java-businessmessages/LICENSE)
+
+[shell_img]: https://gstatic.com/cloudssh/images/open-btn.png

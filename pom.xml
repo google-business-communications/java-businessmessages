@@ -66,6 +66,9 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+          <excludes>
+            <exclude>snippets/com/google/apis/*.java</exclude>
+          </excludes>
         </configuration>
       </plugin>
       <plugin>
@@ -152,4 +155,3 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 </project>
-
