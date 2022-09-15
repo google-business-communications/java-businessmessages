@@ -305,7 +305,7 @@ See the code examples to see example usage for most API features. The samples' `
 
 ## Snippets
 
-Code snippets are in the [`snippets/`](https://github.com/google-business-communications/java-businessmessages/tree/master/snippets)
+Code snippets are in the [`snippets/`](https://github.com/google-business-communications/java-businessmessages/tree/master/snippets) folder.
 
 | Snippet                      | Source Code                       | Try it |
 | --------------------------- | --------------------------------- | ------ |
